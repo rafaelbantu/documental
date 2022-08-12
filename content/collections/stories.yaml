@@ -1,15 +1,15 @@
 title: Stories
-template: stories
 sites:
   - default
   - es
   - pt
+propagate: false
+template: stories
+layout: layouts/layout
+revisions: false
 route: '/{slug}'
 date: true
+sort_dir: desc
 date_behavior:
   past: public
   future: unlisted
-sort_dir: desc
-#layout: stories
-layout: layout
-revisions: false

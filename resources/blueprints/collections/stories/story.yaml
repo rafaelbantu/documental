@@ -458,16 +458,5 @@ sections:
           required: true
           validate:
             - required
-      -
-        handle: template_field
-        field:
-          hide_partials: true
-          blueprint: false
-          display: 'Template Field'
-          type: template
-          icon: template
-          listable: hidden
-          instructions_position: above
-          visibility: visible
 taxonomies: true
 title: Story
