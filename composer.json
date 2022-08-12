@@ -1,0 +1,9 @@
+{
+    "name": "rafaelbantu/documental",
+    "extra": {
+        "statamic": {
+            "name": "Documental",
+            "description": "interactive reports and data storytelling"
+        }
+    }
+}
