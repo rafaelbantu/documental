@@ -35,7 +35,7 @@ sections:
           display: Narrative
           instructions: 'Bellow you can edit all the content of the narrative'
       -
-        handle: structure2
+        handle: scenario
         field:
           type: replicator
           sets:
