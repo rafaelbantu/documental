@@ -58,7 +58,7 @@ sections:
                     restrict: false
                     display: 'Image Background'
                     width: 50
-                    validate: required
+                    #validate: required
                     show_when:
                       no_cover: null
                 -

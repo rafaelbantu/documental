@@ -8,5 +8,6 @@ export_paths:
   - resources/views
   - public/assets/main
   - public/css
+  - public/js
   - package.json
   - webpack.mix.js
