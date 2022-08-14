@@ -58,7 +58,6 @@ sections:
                     restrict: false
                     display: 'Image Background'
                     width: 50
-                    #validate: required
                     show_when:
                       no_cover: null
                 -
@@ -458,5 +457,17 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: template
+        field:
+          input_type: text
+          antlers: false
+          default: stories
+          display: template
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: read_only
 taxonomies: true
 title: Story
