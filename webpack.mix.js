@@ -13,14 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/site.js', 'public/js')
 
-//stories.js  sulram.photoswipe.js
-// /home/banto/Statamic/migracao/public/themes/stories/js
-
-// stories.css  stories.css.map
-// /home/banto/Statamic/migracao/public/themes/stories/css
-
-// /home/banto/Statamic/migracao/public/themes/stories/sass
-
 mix.postCss('resources/css/tailwind.css', 'public/css', [
     require('postcss-import'),
     require('tailwindcss/nesting'),
