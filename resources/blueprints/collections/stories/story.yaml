@@ -50,17 +50,6 @@ sections:
                     display: 'No cover'
                     default: 'false'
                 -
-                  handle: bg_img
-                  field:
-                    type: assets
-                    container: main
-                    folder: /
-                    restrict: false
-                    display: 'Image Background'
-                    width: 50
-                    show_when:
-                      no_cover: null
-                -
                   handle: bg_video
                   field:
                     type: assets
@@ -69,8 +58,12 @@ sections:
                     restrict: false
                     display: 'Video Background'
                     width: 50
-                    show_when:
-                      no_cover: null
+                    instructions_position: above
+                    listable: hidden
+                    visibility: visible
+                    mode: list
+                    allow_uploads: true
+                    show_filename: true
                 -
                   handle: overlay_opacity
                   field:
@@ -113,6 +106,23 @@ sections:
                               restrict_assets: false
                               display: 'Markdown Text'
                     display: Sections
+                -
+                  handle: bg_img
+                  field:
+                    type: assets
+                    container: main
+                    folder: /
+                    restrict: false
+                    display: 'Image Background'
+                    width: 50
+                    instructions_position: above
+                    listable: hidden
+                    visibility: visible
+                    mode: list
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    icon: assets
             map_blocks:
               display: 'Map Blocks'
               fields:
@@ -410,6 +420,11 @@ sections:
                     display: Videos
           display: Structure
           localizable: true
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          collapse: false
+          previews: true
   mapbox:
     display: Mapbox
     fields:

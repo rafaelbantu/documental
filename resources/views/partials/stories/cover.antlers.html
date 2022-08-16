@@ -1,22 +1,27 @@
 <section id="section-{{ index }}" class="cover {{ if no_cover }}no-cover{{ /if }}">
 
-	{{ bg_video }}
+        {{ if bg_video | count > 0 }}
 
-	<div class="cover-video">
-		<video autoplay muted loop id="video">
-			<source src="{{ value }}" type="video/mp4">
-		</video>
-	</div>
+                        {{ bg_video }}
 
-	{{ /bg_video }}
+				<div class="cover-video">
+					<video autoplay muted loop id="video">
+						<source src="{{ url }}" type="video/mp4">
+					</video>
+				</div>
 
-	{{ bg_img }}
+                        {{ /bg_video }}
+        {{ else }}
 
-	<div class="cover-image {{ bg_video }}is-placeholder{{ /bg_video }}">
-		<img src="{{ value }}" style="object-position: right;">
-	</div>
+		        {{ bg_img }}
 
-	{{ /bg_img }}
+			        <div class="cover-image">
+			                <img src="{{ url }}" style="object-position: right;">
+			        </div>
+
+		        {{ /bg_img }}
+
+	{{ /if }}
 
 	{{ if not no_cover }}
 	<div class="background-overlay" style="opacity: {{ overlay_opacity }};"></div>
